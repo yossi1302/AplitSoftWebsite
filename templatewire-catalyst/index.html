@@ -47,10 +47,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">About</a></li>
-        <li><a href="#services" class="page-scroll">Services</a></li>
-        <li><a href="#pricing" class="page-scroll">Clients</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li>
+        <li><a href="#about" class="page-scroll" id="aboutA">About</a></li>
+        <li><a href="#services" class="page-scroll" id="servicesA">Services</a></li>
+        <li><a href="#pricing" class="page-scroll" id="clientsA">Clients</a></li>
+        <li><a href="#contact" class="page-scroll" id="contactsA">Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -98,28 +98,39 @@ We help our customers to make appropriate hardware and software choices, reduce 
       <hr>
     </div>
     <div class="row">
-      <div class="col-xs-6 col-md-3"><span class="material-symbols-outlined" style="font-size: 80px; margin: 10px 0; color: #0ba2db;">
-        terminal
-        </span>
-        <h4>Software</h4>
-        <p>Linux expert: uboot, device tree, kernel, BSP, demons and application, performances and power optimization, architecture. Drivers and ISP for any CMOS image sensor (Aptina, OmniVision, Sony IMX and more) for any CPU or MCU Experts in all OS :Linux, Android, Windows, RTOS and bare metal Custom BSP, any needed driver, porting, reducing startup time and power consumption, improving systems security</p>
-      </div>
-      <div class="col-xs-6 col-md-3"><i class="material-icons" style="font-size: 80px; margin: 10px 0; color: #0ba2db;">&#xe322;</i>
-        <h4>Hardware</h4>
-        <p> Full design for MCUs, processors, sensors, power, communication . Specification definitions, Electrical schematic design, PCB layout routing</p>
-      </div>
-      <div class="col-xs-6 col-md-3"><span class="material-symbols-outlined" style="font-size: 80px; margin: 10px 0; color: #0ba2db;">
+      <div class="full-screen hidden flex-container-center">
+        <h2 >software</h2>
+        <a href="#services"><button onclick="closePopup()" id="close">&times;</button>
+      </div></a>
+      <div class="full-screen1 hidden flex-container-center">
+        <h2 >Hardware</h2>
+        <a href="#services"><button onclick="closePopup1()" id="close">&times;</button>
+      </div></a>
+      <div class="full-screen2 hidden flex-container-center">
+        <h2 >Security</h2>
+        <a href="#services"><button onclick="closePopup2()" id="close">&times;</button>
+      </div></a>
+      <div class="full-screen3 hidden flex-container-center">
+        <h2 >QA and test automation</h2>
+        <a href="#services"><button onclick="closePopup3()" id="close">&times;</button>
+      </div></a>
+      <a href="#header"><button onclick="showPopup()" style="height: 250px; width: 250px;"><div>
+        <span class="material-symbols-outlined" style="font-size: 150px; margin: 10px 0; color:  hsl(252, 74%, 33%);"> terminal </span>
+        <h4 style="color:  hsl(252, 74%, 33%); font-weight: 900;">Software</h4>
+      </div></button></a>
+      <a href="#header"><button onclick="showPopup1()" style="height: 250px; width: 250px;"><div><i class="material-icons" style="font-size: 150px; margin: 10px 0; color: hsl(252, 74%, 33%);">&#xe322;</i>
+        <h4 style="color: hsl(252, 74%, 33%); font-weight: 900;">Hardware</h4>
+      </div></button></a>
+      <a href="#header"><button onclick="showPopup2()" style="height: 250px; width: 250px;"><div><span class="material-symbols-outlined" style="font-size: 150px; margin: 10px 0; color: hsl(252, 74%, 33%);">
         security
         </span>
-        <h4>Security</h4>
-        <p>We develop solutions with minimum permission development, local DB encryption, secure API connection using TLS/SSL, real time auditing and monitoring of security flaws, secure connection to the cloud.</p>
-      </div>
-      <div class="col-xs-6 col-md-3"> <span class="material-symbols-outlined" style="font-size: 80px; margin: 10px 0; color: #0ba2db;">
+        <h4 style="color: hsl(252, 74%, 33%); font-weight: 900;">Security <br> </h4>
+      </div></button></a>
+      <a href="#header"><button onclick="showPopup3()" style="height: 250px; width: 250px;"><div> <span class="material-symbols-outlined" style="font-size: 150px; margin: 10px 0; color: hsl(252, 74%, 33%); text-align: center;">
         autorenew
         </span>
-        <h4>QA and test automation</h4>
-        <p> We test multidisciplinary embedded systems (SW and HW), server-client systems, Web and mobile apps, SaaS systems and security. We create requirements for automation, develop and execute automatic tests for any needed stage: debug, integration and end-to-end functional testing</p>
-      </div>
+        <h4 style="color: hsl(252, 74%, 33%); font-weight: 900; white-space: nowrap;">QA & auto testing</h4>
+      </div></button></a>
     </div>
   </div>
 </div>
@@ -130,7 +141,7 @@ We help our customers to make appropriate hardware and software choices, reduce 
     <div class="section-title center">
       <h2>Clients</h2>
       <div class="row">
-        <img src="img/1.png"/>
+        <img src="img/1.png" style="height: 40%; width: 40%;"/>
         <img src="img/2.png"/>
         <img src="img/3.png"/>
         <img src="img/4.png"/>
