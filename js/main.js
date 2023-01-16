@@ -60,6 +60,7 @@ function showPopup() {
     document.getElementById("servicesA").innerHTML = "";
     document.getElementById("clientsA").innerHTML = "";
     document.getElementById("contactsA").innerHTML = "";
+    document.getElementById("logo").style.display = "none";
 }
 
 function closePopup() {
@@ -68,6 +69,8 @@ function closePopup() {
     document.getElementById("servicesA").innerHTML = "Services";
     document.getElementById("clientsA").innerHTML = "Clients";
     document.getElementById("contactsA").innerHTML = "Contact";
+    document.getElementById("logo").style.display = "inline";
+
 }
 
 function showPopup1() {
@@ -76,6 +79,8 @@ function showPopup1() {
     document.getElementById("servicesA").innerHTML = "";
     document.getElementById("clientsA").innerHTML = "";
     document.getElementById("contactsA").innerHTML = "";
+    document.getElementById("logo").style.display = "none";
+
 }
 
 function closePopup1() {
@@ -84,6 +89,8 @@ function closePopup1() {
     document.getElementById("servicesA").innerHTML = "Services";
     document.getElementById("clientsA").innerHTML = "Clients";
     document.getElementById("contactsA").innerHTML = "Contact";
+    document.getElementById("logo").style.display = "inline";
+
 }
 
 function showPopup2() {
@@ -92,6 +99,8 @@ function showPopup2() {
     document.getElementById("servicesA").innerHTML = "";
     document.getElementById("clientsA").innerHTML = "";
     document.getElementById("contactsA").innerHTML = "";
+    document.getElementById("logo").style.display = "none";
+
 }
 
 function closePopup2() {
@@ -100,6 +109,8 @@ function closePopup2() {
     document.getElementById("servicesA").innerHTML = "Services";
     document.getElementById("clientsA").innerHTML = "Clients";
     document.getElementById("contactsA").innerHTML = "Contact";
+    document.getElementById("logo").style.display = "inline";
+
 }
 
 function showPopup3() {
@@ -108,6 +119,8 @@ function showPopup3() {
     document.getElementById("servicesA").innerHTML = "";
     document.getElementById("clientsA").innerHTML = "";
     document.getElementById("contactsA").innerHTML = "";
+    document.getElementById("logo").style.display = "none";
+
 }
 
 function closePopup3() {
@@ -116,4 +129,6 @@ function closePopup3() {
     document.getElementById("servicesA").innerHTML = "Services";
     document.getElementById("clientsA").innerHTML = "Clients";
     document.getElementById("contactsA").innerHTML = "Contact";
+    document.getElementById("logo").style.display = "inline";
+
 }
