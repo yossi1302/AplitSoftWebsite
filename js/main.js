@@ -117,38 +117,3 @@ function closePopup3() {
     document.getElementById("clientsA").innerHTML = "Clients";
     document.getElementById("contactsA").innerHTML = "Contact";
 }
-
-import Mailjet from 'node-mailjet';
-
-const mailjet = new Mailjet({
-    apiKey: process.env.MJ_APIKEY_PUBLIC || 'd64116652c3d342f88ee0b559f988549',
-    apiSecret: process.env.MJ_APIKEY_PRIVATE || '45bd6bd40733e6d8bb67333808f94710'
-});
-
-function send_email(name, email, text) {
-
-    const request = mailjet
-        .post('send', { version: 'v3.1' })
-        .request({
-            Messages: [{
-                From: {
-                    Email: "yossi.tzk@hotmail.co.il",
-                    Name: "Mailjet Pilot"
-                },
-                To: [{
-                    Email: "yossitz1302@gmail.com",
-                    Name: "passenger 1"
-                }],
-                Subject: name + " left his information on the website",
-                TextPart: "Email: " + email + " Name: " + name + " Text: " + text,
-            }]
-        })
-
-    request
-        .then((result) => {
-            console.log(result.body)
-        })
-        .catch((err) => {
-            console.log(err.statusCode)
-        })
-};

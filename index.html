@@ -104,19 +104,19 @@
                 <div class="full-screen hidden flex-container-center">
                     <h2>software</h2>
                     <a href="#services"><button onclick="closePopup()" id="close">&times;</button>
-                </div></a>
+      </div></a>
                     <div class="full-screen1 hidden flex-container-center">
                         <h2>Hardware</h2>
                         <a href="#services"><button onclick="closePopup1()" id="close">&times;</button>
-                    </div></a>
+      </div></a>
                         <div class="full-screen2 hidden flex-container-center">
                             <h2>Security</h2>
                             <a href="#services"><button onclick="closePopup2()" id="close">&times;</button>
-                        </div></a>
+      </div></a>
                             <div class="full-screen3 hidden flex-container-center">
                                 <h2>QA and test automation</h2>
                                 <a href="#services"><button onclick="closePopup3()" id="close">&times;</button>
-                            </div></a>
+      </div></a>
                                 <a href="#header"><button onclick="showPopup()" style="height: 250px; width: 250px;"><div>
         <span class="material-symbols-outlined" style="font-size: 150px; margin: 10px 0; color:  hsl(252, 74%, 33%);"> terminal </span>
         <h4 style="color:  hsl(252, 74%, 33%); font-weight: 900;">Software</h4>
@@ -172,17 +172,17 @@
                                 <p>Leave your information and we will contact you soon.</p>
                             </div>
                             <div class="col-md-8 col-md-offset-2">
-                                <form name="sentMessage" id="contactForm" novalidate>
+                                <form name="sentMessage" id="contactForm" action="https://formsubmit.co/yossi.tzk@hotmail.co.il" method="POST" novalidate>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                                <input name="name" type="text" id="name" class="form-control" placeholder="Name" required="required">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                                <input name="email" type="email" id="email" class="form-control" placeholder="Email" required="required">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
@@ -191,8 +191,10 @@
                                         <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
+                                    <input type="hidden" name="_subject" value="New submission!">
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/#services">
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-custom btn-lg" onclick="send_email(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('message').value)">Send Message</button>
+                                    <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
                                 </form>
                                 <div class="social">
                                     <ul>
@@ -208,7 +210,6 @@
                     <script type="text/javascript" src="js/bootstrap.js"></script>
                     <script type="text/javascript" src="js/SmoothScroll.js"></script>
                     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-                    <script type="text/javascript" src="js/contact_me.js"></script>
                     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
