@@ -132,3 +132,12 @@ function closePopup3() {
     document.getElementById("logo").style.display = "inline";
 
 }
+
+function alert() {
+    var x = document.getElementById("alert");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
